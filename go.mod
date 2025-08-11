@@ -1,3 +1,3 @@
-module hello.go
+module go-projects
 
 go 1.24.6
