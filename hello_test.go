@@ -5,8 +5,8 @@ import (
 )
 
 func TestReverseWordsPreserveStructure_He_Wo(t *testing.T) {
-	input := "He wo"
-	expected := "eH ow"
+	input := "He, wo"
+	expected := "eH, ow"
 	actual := ReverseWordsPreserveStructure(input)
 	if actual != expected {
 		t.Errorf("input:\n%q\nexpected:\n%q\ngot:\n%q", input, expected, actual)
@@ -42,7 +42,7 @@ func TestReverseWordsPreserveStructure_GoIsFun(t *testing.T) {
 
 func TestReverseWordsPreserveStructure_TestCase(t *testing.T) {
 	input := "A test-case."
-	expected := "A esac-tset."
+	expected := "A tset-esac."
 	actual := ReverseWordsPreserveStructure(input)
 	if actual != expected {
 		t.Errorf("input:\n%q\nexpected:\n%q\ngot:\n%q", input, expected, actual)

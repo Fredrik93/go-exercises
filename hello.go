@@ -14,10 +14,11 @@ func ReverseWordsPreserveStructure(input string) string {
 	for i := 0; i < len(runes); i++ {
 		var symbol rune = runes[i];
 		fmt.Printf("symbol (character): %c\n", symbol)
-		if unicode.IsLetter(runes[i]) || unicode.IsDigit(runes[i]) {
+		if unicode.IsLetter(runes[i]) || 
+		unicode.IsDigit(runes[i]) {
 			stack = append(stack, runes[i])
 
-		} else if unicode.IsSpace(runes[i]) {
+		} else {
 
 			for len(stack) > 0 {
 
@@ -28,7 +29,7 @@ func ReverseWordsPreserveStructure(input string) string {
 			result = append(result, runes[i]) // add the space or punctuation
 
 		}
-
+	
 	}
 	for len(stack) > 0 {
 

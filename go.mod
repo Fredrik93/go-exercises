@@ -1,3 +1,3 @@
-module go-projects
+module test
 
 go 1.24.6
