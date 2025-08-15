@@ -1,9 +1,10 @@
-package math
+package test
 
-import "testing"
+import ("testing"
+		"projects/exercises")
 
 func TestSub(t *testing.T) {
-	got := Sub(5, 3)
+	got := exercises.Sub(5, 3)
 	want := 2
 	if( got != want) {
 		t.Errorf("Add(2, 3) = %d; want %d", got, want)

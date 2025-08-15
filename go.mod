@@ -1,3 +1,3 @@
-module example.com/m
+module projects
 
 go 1.24.6

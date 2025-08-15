@@ -1,4 +1,4 @@
-package math
+package exercises
 
 func AddFive(a int) int {
 	Hi()
