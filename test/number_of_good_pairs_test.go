@@ -6,7 +6,7 @@ import (
 	"testing"
 )
 
-func TestOk(t *testing.T) {
+func TestGoodPairs1(t *testing.T) {
 	got := exercises.NumOfGoodPairs( [] int {1,2,3,1,1,3})
 	want := 4
 
@@ -15,7 +15,7 @@ func TestOk(t *testing.T) {
 	}
 
 }
-func TestOk1(t *testing.T) {
+func TestGoodPairs2(t *testing.T) {
 	got := exercises.NumOfGoodPairs( [] int {1,1,1,1})
 	want := 6
 
@@ -24,7 +24,7 @@ func TestOk1(t *testing.T) {
 	}
 
 }
-func TestOk2(t *testing.T) {
+func TestGoodPairs3(t *testing.T) {
 	got := exercises.NumOfGoodPairs( [] int {1,2,3})
 	want := 0
 
