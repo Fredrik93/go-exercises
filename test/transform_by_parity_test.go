@@ -14,4 +14,15 @@ func TestTransformOk(t *testing.T) {
 		t.Errorf("\ngot %v\nwant:%v", got, want)
 	}
 
+
+
 }
+func TestTransformOk1(t *testing.T) {
+	got := exercises.TransformArray( [] int {1,5,1,4,2})
+	want := [] int {0,0,1,1,1}
+
+	if !reflect.DeepEqual(got, want) {
+		t.Errorf("\ngot %v\nwant:%v", got, want)
+	}
+}
+
