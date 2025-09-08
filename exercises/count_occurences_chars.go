@@ -9,7 +9,7 @@ func NumJewelsInStones(jewels string, stones string) int {
     for i, s := range stones {
 		if(strings.ContainsRune(jewels, s)){
 			i++;
-			result++
+			result--
 		}
 	}
 	
