@@ -17,7 +17,7 @@ func TestRunningFriends(t *testing.T) {
 }
 func TestRunningFriends2(t *testing.T) {
 	got := exercises.RecoverOrder( [] int {1,4,5,3,2}, [] int {5,2})
-	want := [] int {-1}
+	want := [] int {5,2}
 
 	if !reflect.DeepEqual(got, want) {
 		t.Errorf("\ngot %v\nwant:%v", got, want)
